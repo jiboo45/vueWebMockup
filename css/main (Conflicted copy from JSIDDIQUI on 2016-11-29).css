@@ -1,0 +1,687 @@
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    
+    background-color: #333333;
+    
+    cursor: default;
+    
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+body {
+}
+
+button {
+    background:none;
+    border:none;
+    outline: none;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+td {
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+    font-size: 12px;
+    padding: 5px 5px 15px 5px;
+}
+
+tr {
+    -webkit-transition-duration: 200ms; /* Safari */
+    transition-duration: 200ms;
+}
+
+tr:active {
+    /*background-color: #1eaded;*/
+}
+
+tr:hover {
+    cursor: pointer;
+}
+
+tr:nth-child(even) {
+    background-color: #101010;
+}
+
+td:first-child {
+    -moz-border-radius:3px 0 0 3px;
+    -webkit-border-radius:3px 0 0 3px;
+}
+
+td:last-child {
+    -moz-border-radius:0 3px 3px 0;
+    -webkit-border-radius:0 3px 3px 0;
+}
+
+tr:active {
+    box-shadow: inset -1px -33px 0px -30px #1eaded;
+    -webkit-box-shadow: inset -1px -33px 0px -30px #1eaded;
+    -moz-box-shadow: inset -1px -33px 0px -30px #1eaded;
+    -o-box-shadow: inset -1px -33px 0px -30px #1eaded;
+}
+
+tr:active h5 {
+    color: #1eaded;
+}
+
+tr:active p {
+    color: #1eaded;
+}
+
+tr:active i {
+    color: #1eaded;
+}
+
+
+.delay {
+    -webkit-transition-duration: 200ms; /* Safari */
+    transition-duration: 200ms;
+}
+
+.vueLogo {
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+    opacity: 0.1;
+}
+
+.vueLogo img {
+    width: 60px;
+}
+
+.vueLogo p {
+    color: #efefef;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+.boxShadow {
+    -webkit-box-shadow: 0px 10px 12px -5px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 10px 12px -5px rgba(0,0,0,0.05);
+    box-shadow: 0px 10px 12px -5px rgba(0,0,0,0.05);
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.headerContainer {
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    background-color: #111111;
+    border-bottom: 3px solid #1eaded;
+    overflow: hidden;
+    top: 0px;
+}
+
+.headerContainer i {
+    font-size: 40px;
+    color: #efefef;
+}
+
+.userContainer {
+    display: -webkit-box;
+    float: left;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.searchButtonContainer {
+    display: -webkit-box;
+    float: right;
+    overflow: hidden;
+}
+
+.userText {
+    color: #555555;
+    border-left: 1px solid #171717;
+    padding-left: 5px;
+}
+
+.userText p {
+    font-size: 12px;
+    margin: 5px;
+}
+
+.userText h4 {
+    font-size: 16px;
+    margin: 5px;
+}
+
+.goBarContainer {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+
+.goBarSearchContainer {
+    display: -webkit-box;
+}
+
+
+.goBarSearch {
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#iconButton {
+    background-color: #101010;
+    border-radius: 500px;
+    padding: 3px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#iconButton:active {
+    background-color: #1eaded;
+    color: #222222;
+}
+
+#iconButton:hover {
+    cursor: pointer;
+    -webkit-transition-duration: 200ms; /* Safari */
+    transition-duration: 200ms;
+}
+
+#goBarSearch {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 10px;
+    color: #efefef;
+    padding: 10px;
+    background-color: #333333;
+    border: none;
+    border-radius: 3px;
+    width: 800px;
+    float: left;
+}
+
+.goBarResults {
+    width: 100%;
+    position: relative;
+    left: 0%;
+}
+
+.goBarResults ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.goBarResults i {
+}
+
+.resultsGrid li {
+    display: inline-block;
+    text-align: center;
+    width: 19%;
+}
+
+.goBarResults h5 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.goBarResults p {
+    font-size: 12px;
+    color: #555555;
+}
+
+.resultsGrid i {
+    float: none;
+    font-size: 60px;
+    background-color: #101010;
+    padding: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+    border-radius: 3px;
+}
+
+.notificationContainer {
+    float: right;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.resultsGrid {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resultsTable {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resultsTable table {
+    width: 100%;
+}
+
+#tableIcon {
+    float: right;
+}
+
+
+.slideToggle {
+    height: 100%;
+    opacity: 0.999;
+}
+
+.goBarSignalPath {
+    position: relative;
+    left: 0%;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.show {
+    left: -100%;
+    -webkit-transition-duration: 200ms; /* Safari */
+    transition-duration: 200ms;
+}
+
+.hide {
+    left: -100%;
+    -webkit-transition-duration: 200ms; /* Safari */
+    transition-duration: 200ms;
+}
+
+.goBarSignalPath p {
+    font-size: 12px;
+    color: #555555;   
+}
+
+.signalPathGraphImg {
+    width: 100%;
+    margin-top: 50px;
+    display: inherit;
+}
+
+.footerContainer {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+.footerContainer i {
+    font-size: 40px;
+    color: #efefef;
+    margin-left: 10px;
+}
+
+.footerNavContainer {
+    float: left;
+    position: fixed;
+    left: 0px;
+}
+
+.navMove {
+    left: 335px;
+}
+
+.hideSideBar {
+    opacity: 0;
+    display: none;
+}
+
+.mainContainer {
+    margin-top: 125px;
+    width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainAppsContainer {
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.mainAppsGrid {
+}
+
+.mainAppsGrid li {
+    text-align: center;
+    background-color: #101010;
+    padding: 20px;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 5px;
+    width: 246px;
+    
+    -webkit-box-shadow: 0px 10px 12px -5px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 10px 12px -5px rgba(0,0,0,0.05);
+    box-shadow: 0px 10px 12px -5px rgba(0,0,0,0.05);
+}
+
+.mainAppsGrid li:active i {
+    color: #1eaded;
+}
+
+.mainAppsGrid li:active p {
+    color: #1eaded;
+}
+
+.mainAppsGrid li:hover {
+    cursor: pointer;
+}
+
+.mainAppsGrid li:active {
+    box-shadow: inset -1px -33px 0px -30px #1eaded;
+    -webkit-box-shadow: inset -1px -33px 0px -30px #1eaded;
+    -moz-box-shadow: inset -1px -33px 0px -30px #1eaded;
+    -o-box-shadow: inset -1px -33px 0px -30px #1eaded;
+    
+    -webkit-transition-duration: 200ms; /* Safari */
+    transition-duration: 200ms;
+}
+
+.mainAppsGrid p {
+    color: #efefef;
+}
+
+.mainAppsGrid i {
+    font-size: 80px;
+    color: #efefef;
+}
+
+.gridHeader {
+    color: #555555;
+    font-weight: 300;
+}
+
+.leftSideBar {
+    width: 400px;
+    background-color: #111111;
+    position: fixed;
+    height: 100%;
+    top: 0px;
+    left: -400px;
+    
+    -webkit-box-shadow: 10px 0px 12px -5px rgba(0,0,0,0.05);
+    -moz-box-shadow: 10px 0px 12px -5px rgba(0,0,0,0.05);
+    box-shadow: 10px 0px 12px -5px rgba(0,0,0,0.05);
+}
+
+.leftSideBarContainer {
+}
+
+.leftSideBarContainer li {
+    color: #efefef;
+    padding: 20px;
+    background-color: #101010;
+}
+
+.leftSideBarContainer li:active {
+    box-shadow: inset -1px -33px 0px -30px #1eaded;
+    -webkit-box-shadow: inset -1px -33px 0px -30px #1eaded;
+    -moz-box-shadow: inset -1px -33px 0px -30px #1eaded;
+    -o-box-shadow: inset -1px -33px 0px -30px #1eaded;
+    
+    -webkit-transition-duration: 200ms; /* Safari */
+    transition-duration: 200ms;
+}
+
+.leftSideBarContainer li:active i {
+    color: #1eaded;
+}
+
+.leftSideBarContainer li:active p {
+    color: #1eaded;
+}
+
+.leftSideBarContainer li:hover {
+    cursor: pointer;
+}
+
+.leftSideBarContainer p {
+    display: -webkit-inline-box;
+    font-weight: 300;
+}
+
+.leftSideBarContainer i {
+    font-size: 38px;
+    float: right;
+}
+
+.sideBarItem {
+    
+}
+
+.sideBarShow {
+    left: 0px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    .goBarContainer {
+        width: 400px;
+    }
+    
+    .goBarSearch {
+        margin-top: 10px;
+    }
+    
+    #goBarSearch {
+        width: 510px;
+    }
+    
+    .mainContainer {
+        width: 100%;
+        margin-top: 85px;
+    }
+    
+    .headerContainer {
+        height: 75px;
+    }
+    
+    .headerContainer i {
+        font-size: 30px;
+    }
+    
+    .footerContainer i {
+        font-size: 30px;
+    }
+    
+    .goBarContainer {
+        width: 600px;
+    }
+    
+    .userText {
+        display: none;
+    }
+    
+    .searchButtonContainer {
+        margin-top: 5px;
+    }
+    
+    .mainAppsGrid li {
+        width: 203px;
+    }
+    
+    .slideToggle {
+        height: 100%;
+    }
+    
+    .goBarSignalPath {
+        width: 700px;
+    }
+    
+    .resultsTable {
+        width: 700px;
+    }
+    
+    .resultsGrid {
+        width: 700px;
+    }
+    
+    
+    
+}
+
+@media only screen and (max-width: 450px) {
+    .goBarContainer {
+        width: 230px;
+    }
+    
+    .mainAppsGrid li {
+        width: 153px;
+    }
+    
+    .mainAppsGrid i {
+        font-size: 50px;
+    }
+    
+    .mainAppsGrid p {
+        font-size: 10px;
+    }
+    
+    #goBarSearch {
+        width: 140px;
+    }
+    
+    .goBarResults h5 {
+        font-size: 10px;
+    }
+    
+    .goBarResults p {
+        font-size: 8px;
+    }
+    
+    .resultsGrid li {
+        width: 70px;
+    }
+    
+    th {
+        font-size: 8px;
+    }
+    
+    .footerNavContainer {
+        margin-top: 15px;
+    }
+    
+    .goBarResults i {
+        font-size: 20px;
+    }
+    
+     .goBarSignalPath {
+        width: 340px;
+    }
+    
+    .resultsTable {
+        width: 340px;
+    }
+    
+    .resultsGrid {
+        width: 340px;
+    }
+
+}
+    
+@media only screen and (max-width: 400px) {
+    .mainAppsGrid li {
+            width: 135px;
+    }
+    
+}
+
+@media only screen and (max-width: 360px) {
+    .mainAppsGrid li {
+        width: 127px;
+    }
+    
+    .goBarContainer {
+        width: 217px;
+    }
+    
+    #goBarSearch {
+        width: 130px;
+    }
+    
+}
+
+@media only screen and (max-width: 320px) {
+    .mainAppsGrid li {
+        width: 107px;
+    }
+    
+    .goBarContainer {
+        width: 177px;
+    }
+    
+    #goBarSearch {
+        width: 91px;
+    }
+    
+}
+
+
+

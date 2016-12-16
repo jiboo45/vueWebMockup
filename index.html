@@ -1,0 +1,311 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="evertzIconsV2/style.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        
+        <link rel="icon" type="image/png" href="favicon.ico">
+    </head>
+    <body>
+        <div class="headerContainer boxShadow delay">
+            <div class="userContainer">
+                <i class="icon-icon_user" id="iconButton"></i>
+                <div class="userText">
+                    <h4>John Doe</h4>
+                    <p>Audio Supervisor</p>
+                </div>
+            </div>
+            <div class="notificationContainer">
+                <i class="icon-icon_info" id="iconButton"></i>
+            </div>
+            <div class="goBarContainer delay">
+                <div class="goBarSearch">
+                    <div class="searchButtonContainer">
+                        <i class="icon-icon_magnifyglass goBarSearchButton" id="iconButton"></i>
+                    </div>
+                        <input type="search" id="goBarSearch" placeholder="Explore...">
+                </div>
+            </div>
+            <div class="goBarSearchContainer">
+                <div class="goBarResults delay">
+                        <div class="resultsGrid">
+                        <ul>
+                        <p class="goBarResultsTitleContainer">Related Results</p>    
+                        <li>
+                            <i class="icon-icon_multiviewer" id="iconButton"></i>
+                            <h5>NBA-CAP1-4</h5>
+                            <p>Multiviewer</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_multiviewer" id="iconButton"></i>
+                            <h5>NBA-CAP5-8</h5>
+                            <p>Multiviewer</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_switcher" id="iconButton"></i>
+                            <h5>3025SW-HDSD</h5>
+                            <p>Switcher</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_camera" id="iconButton"></i>
+                            <h5>DC-1786</h5>
+                            <p>Camera</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_network_split" id="iconButton"></i>
+                            <h5>DC-1095</h5>
+                            <p>Signal Path</p>
+                        </li>
+                        </ul>
+                        </div>
+                        <div class="resultsTable delay">
+                        <table>
+                        <p class="goBarResultsTitleContainer">Results</p>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Workflow</th>
+                        <tr>
+                            <td><h5>NBA-CAPTURE-2</h5></td>
+                            <td><p>MULTIVIEWER</p></td>
+                            <td><button type="button"><i class="icon-icon_network_split signalPathButton" id="iconButton"></i></button></td>
+                            <td><i class="icon-icon_multiviewer_select" id="tableIcon"></i></td>
+                        </tr>
+                        <tr>
+                            <td><h5>NBA-CAPTURE-3</h5></td>
+                            <td><p>MULTIVIEWER</p></td>
+                            <td><button type="button"><i class="icon-icon_network_split signalPathButton" id="iconButton"></i></button></td>
+                            <td><i class="icon-icon_multiviewer_select" id="tableIcon"></i></td>
+                        </tr>
+                        <tr>
+                            <td><h5>NBA-CAPTURE-4</h5></td>
+                            <td><p>MULTIVIEWER</p></td>
+                            <td><button type="button"><i class="icon-icon_network_split signalPathButton" id="iconButton"></i></button></td>
+                            <td><i class="icon-icon_multiviewer_select" id="tableIcon"></i></td>
+                        </tr>
+                        <tr>
+                            <td><h5>NBA-CAPTURE-5</h5></td>
+                            <td><p>MULTIVIEWER</p></td>
+                            <td><button type="button"><i class="icon-icon_network_split signalPathButton" id="iconButton"></i></button></td>
+                            <td><i class="icon-icon_multiviewer_select" id="tableIcon"></i></td>
+                        </tr>
+                        </table>
+                        </div>
+                </div>
+                <div class="goBarSignalPath delay">
+                    <p class="goBarResultsTitleContainer">Workflow</p> 
+                    <img class="signalPathGraphImg" src="img/workflowChart.svg">
+                    <i class="icon-icon_arrow_left signalPathBackButton" id="iconButton"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mainContainer">
+            <div class="mainTitleContainer">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="mainAppsContainer">
+                <div class="titleContainer">
+                    <h2 class="titleText">Recent</h2>
+                </div>
+                <div class="mainAppsGrid delay">
+                    <ul>
+                        <div class="mainAppsGridContainer">
+                        <li>
+                            <i class="icon-icon_satelite-"></i>
+                            <p>Transmit</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_3d"></i>
+                            <p>3D</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_cc"></i>
+                            <p>Closed Caption</p>
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="mainAppsContainer">
+                <div class="titleContainer">
+                    <h2 class="titleText">Applications</h2>
+                </div>
+                <div class="mainAppsGrid delay">
+                    <ul>
+                        <li>
+                            <i class="icon-icon_settings"></i>
+                            <p>Config Management</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_devices"></i>
+                            <p>Devices and Links</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_connections1"></i>
+                            <p>EXE and IPX </p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_monitor"></i>
+                            <p>Interfaces</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_multiviewer"></i>
+                            <p>Multiviewer</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_bug"></i>
+                            <p>Bug Report</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_evertz_e"></i>
+                            <p>Evertz Net</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_console"></i>
+                            <p>Script</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_signal"></i>
+                            <p>Signal</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_folder"></i>
+                            <p>File Explorer</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_eye_open"></i>
+                            <p>Visibility</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_trash"></i>
+                            <p>Recovery</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_bluetooth"></i>
+                            <p>Bluetooth</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_phone"></i>
+                            <p>Teleconference</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_eco"></i>
+                            <p>Eco Mode</p>
+                        </li>
+                        <li>
+                            <i class="icon-icon_censor"></i>
+                            <p>Censorship</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="leftSideBar delay">
+            <div class="leftSideBarContainer">
+                <ul>
+                    <li>
+                        <div class="sideBarItem">
+                            <p>Dashboard</p>
+                            <i class="icon-icon_gauge"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sideBarItem">
+                            <p>Security</p>
+                            <i class="icon-icon_lock"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sideBarItem">
+                            <p>Network</p>
+                            <i class="icon-icon_netword"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sideBarItem">
+                            <p>Swticher</p>
+                            <i class="icon-icon_switcher"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sideBarItem">
+                            <p>Capture</p>
+                            <i class="icon-icon_capture"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightSideBar delay">
+            <div class="rightSideBarContainer">
+                <ul>
+                    <li>
+                        <div class="sideBarAlarmItem delay">
+                            <i class="icon-icon_alarm_active"></i>
+                            <h4>NBC-STREAM-4</h4>
+                            <p>Video Error</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sideBarAlarmItem delay">
+                            <i class="icon-icon_alarm_active"></i>
+                            <h4>ESPN-HOCKEY-STREAM</h4>
+                            <p>Video Error</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sideBarAlarmItem delay">
+                            <i class="icon-icon_alarm_active"></i>
+                            <h4>AUDIO-FOXNEWS</h4>
+                            <p>Audio Drop</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sideBarAlarmItem delay">
+                            <i class="icon-icon_alarm_active"></i>
+                            <h4>AUDIO-FOXNEWS</h4>
+                            <p>Audio Drop</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sideBarAlarmItem delay">
+                            <i class="icon-icon_alarm_active"></i>
+                            <h4>AUDIO-FOXNEWS</h4>
+                            <p>Audio Drop</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerContainer">
+            <div class="footerNavContainer delay">
+                <i class="icon-icon_hamburger footerSideBarButton" id="iconButton"></i>
+                <i class="icon-icon_edit" id="iconButton"></i>
+            </div>
+            <div class="footerAlarmContainer delay">
+                <i class="icon-icon_alarm footerAlarmButton" id="iconButton"></i>
+            </div>
+            <!---
+            <div class="vueLogo">
+                <img src="img/vueLogo.png">
+                <p>V 1.00.01</p>
+            </div>
+            --->
+        </div>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
